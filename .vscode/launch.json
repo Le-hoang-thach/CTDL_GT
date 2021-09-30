@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch lad4",
+            "request": "launch",
+            "mainClass": "tuan03.lad4",
+            "projectName": "CTDL_GT_51450ebe"
+        },
+        {
+            "type": "java",
+            "name": "Launch lad2",
+            "request": "launch",
+            "mainClass": "tuan03.lad2",
+            "projectName": "CTDL_GT_51450ebe"
+        },
+        {
+            "type": "java",
+            "name": "Launch lad1",
+            "request": "launch",
+            "mainClass": "tuan03.lad1",
+            "projectName": "CTDL_GT_51450ebe"
+        },
+        {
+            "type": "java",
+            "name": "Launch lad1",
+            "request": "launch",
+            "mainClass": "tuan02.lad1",
+            "projectName": "CTDL_GT_51450ebe"
+        },
+        {
+            "type": "java",
             "name": "Launch Lad4",
             "request": "launch",
             "mainClass": "tuan01.Lad4",
