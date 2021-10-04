@@ -10,6 +10,6 @@ public class lad3 {
         canh = bienNhap.nextInt();
         thetich = canh*canh*canh;
         System.out.print("Thể tích: " + thetich);
+        }
     }
-    }
-}
+

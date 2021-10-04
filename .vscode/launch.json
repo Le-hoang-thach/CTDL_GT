@@ -8,6 +8,27 @@
             "type": "java",
             "name": "Launch lad3",
             "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan01.lad3",
+            "projectName": "CTDL_GT_51450ebe"
+        },
+        {
+            "type": "java",
+            "name": "Launch lad3",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan02.lad3",
+            "projectName": "CTDL_GT_51450ebe"
+        },
+        {
+            "type": "java",
+            "name": "Launch lad2",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan03.lad2",
+            "projectName": "CTDL_GT_51450ebe"
+        },
+        {
+            "type": "java",
+            "name": "Launch lad3",
+            "request": "launch",
             "mainClass": "com.lehoangthach2008110288.tuan03.lad3",
             "projectName": "CTDL_GT_51450ebe"
         },
