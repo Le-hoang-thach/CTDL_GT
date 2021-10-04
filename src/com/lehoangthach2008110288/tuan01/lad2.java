@@ -1,8 +1,8 @@
-package tuan01;
+package com.lehoangthach2008110288.tuan01;
 
 import java.util.Scanner;
 
-public class Lad2 {
+public class lad2 {
     public static void main(String[] args) {
         Scanner bienNhap = new Scanner(System.in);
         int chieudai, chieurong;

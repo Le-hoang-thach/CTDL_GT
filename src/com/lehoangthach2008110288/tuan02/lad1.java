@@ -1,4 +1,4 @@
-package tuan02;
+package com.lehoangthach2008110288.tuan02;
 
 import java.util.Scanner;
 

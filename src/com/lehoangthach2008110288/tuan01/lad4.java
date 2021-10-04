@@ -1,5 +1,7 @@
 package com.lehoangthach2008110288.tuan01;
 
+import java.util.Scanner;
+
 public class lad4 {
     public static void main(String[] args) {
         double a,b,c ;

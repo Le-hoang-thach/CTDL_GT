@@ -1,4 +1,6 @@
-package com.lehoangthach2008110288.tuan01.tuan02;
+package com.lehoangthach2008110288.tuan02;
+
+import java.util.Scanner;
 
 public class lad2 {
     public static void main(String[] args) {
