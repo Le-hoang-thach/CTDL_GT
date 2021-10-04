@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch lad4",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan03.lad4",
+            "projectName": "CTDL_GT_51450ebe"
+        },
+        {
+            "type": "java",
+            "name": "Launch lad2",
+            "request": "launch",
+            "mainClass": "baitaptrenlop.lad2",
+            "projectName": "CTDL_GT_51450ebe"
+        },
+        {
+            "type": "java",
             "name": "Launch lad3",
             "request": "launch",
             "mainClass": "com.lehoangthach2008110288.tuan01.lad3",

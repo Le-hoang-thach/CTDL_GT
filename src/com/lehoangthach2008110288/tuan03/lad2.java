@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class lad2 {
     public static void main(String[] args) {
-       Scanner input = new Scanner(System.in);
+       Scanner bienNhap = new Scanner(System.in);
         System.out.print("Nhập vào số cần xem bảng cửu chương : ");
-        int x = input.nextInt() ;
+        int x = bienNhap.nextInt() ;
           
         for  (int i = 2 ; i <= 10 ; i ++){
             System.out.printf("%d x %d = %d",x,i,x*i);
