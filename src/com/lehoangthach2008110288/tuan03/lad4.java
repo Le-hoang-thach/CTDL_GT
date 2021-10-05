@@ -12,13 +12,13 @@ public class lad4 {
         String []a = new String[n];
         for(int i=0 ;i<n;i++){
             System.out.println("Họ và tên học sinh thứ " + i + " : ");
-            
-            a[i] = input.next();
+            input.nextLine();
+            a[i] = input.nextLine();
         }
-        int [] b = new int[n];
+        double []b = new double[n];
         for(int i=0 ;i<n;i++){
             System.out.println("Nhập điểm sinh viên thứ " + i + " : ");
-            b[i] = input.nextInt();
+            b[i] = input.nextDouble();
         }
         for(int i =0;i<n;i++){
             if(b[i] < 5){

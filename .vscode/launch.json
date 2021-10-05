@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch lad1",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan04.lad1",
+            "projectName": "CTDL_GT_51450ebe"
+        },
+        {
+            "type": "java",
             "name": "Launch lad4",
             "request": "launch",
             "mainClass": "com.lehoangthach2008110288.tuan03.lad4",
