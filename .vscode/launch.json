@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch lad3",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan04.lad3",
+            "projectName": "CTDL_GT_51450ebe"
+        },
+        {
+            "type": "java",
+            "name": "Launch maytinhtestdrive",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan03.baitapthem.maytinhtestdrive",
+            "projectName": "CTDL_GT_51450ebe"
+        },
+        {
+            "type": "java",
+            "name": "Launch CowtestDrive",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan03.baitapthem.CowtestDrive",
+            "projectName": "CTDL_GT_51450ebe"
+        },
+        {
+            "type": "java",
+            "name": "Launch lad2",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan04.lad2",
+            "projectName": "CTDL_GT_51450ebe"
+        },
+        {
+            "type": "java",
             "name": "Launch lad1",
             "request": "launch",
             "mainClass": "com.lehoangthach2008110288.tuan04.lad1",
