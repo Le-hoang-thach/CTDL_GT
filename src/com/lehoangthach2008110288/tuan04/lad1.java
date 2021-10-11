@@ -5,21 +5,28 @@ import java.util.Scanner;
 
 public class lad1 {
     public static void main(String[] args) {
-        int n ;
-        double number , sum = 0;
-        ArrayList<Double> arrListDouble = new ArrayList<>();
-        Scanner input = new Scanner(System.in);
-        System.out.println("Nhập số phần tử : ");
-        n = input.nextInt();
-        for(int i =0 ;i<n;i++){
-            System.out.println("Nhập phần tử thứ " + i + " : ");
-            number = input.nextDouble();
-            arrListDouble.add(number);
+        double b;
+        String a;
+        double tong = 0;
+        Scanner n = new Scanner(System.in);
+        ArrayList<Double> list = new ArrayList<>();
+        while(true){
+            System.out.printf("Nhập phần tử thứ %d: ", list.size());
+            b = n.nextDouble();
+            list.add(b);
+            n.nextLine();
+            System.out.println("Bạn có muốn nhập thêm không(Y/N): ");
+            a = n.nextLine();
+            if(a.equals("N"))
+                 break;
         }
-        for(double element : arrListDouble){
-            sum += element;
+        System.out.println("Các phần tử của list");
+        for(Double x : list){
+            System.out.printf("+ %.2f\n", x);
+            tong += x;
         }
-        System.out.println("Tổng các phần tử trong Arrylist = " + sum);
+        System.out.println("Tổng các phần tử là: tổng = " + tong);
+        n.close();
 
     }
 }
