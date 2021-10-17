@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class lad3 {
     static Scanner nhap = new Scanner(System.in);
-    static ArrayList<SanPham> DSSP = new ArrayList<>();
+    static ArrayList<sanpham> DSSP = new ArrayList<>();
     static double gia;
     public static void main(String[] args){
         int luaChon;
@@ -54,7 +54,7 @@ public class lad3 {
         Comparator<SanPham> comparator = new Comparator<SanPham>(){
 
             @Override
-            public int compare(SanPham o1, SanPham o2) {
+            public int compare(sanpham o1, sanpham o2) {
 
                 return Double.compare(o1.gia, o2.gia);
             }
@@ -62,7 +62,7 @@ public class lad3 {
         };
         Collections.sort(DSSP, comparator);
         System.out.println("======Danh sách sản phâm sau khi sắp xếp======");
-        for(SanPham x : DSSP){
+        for(sanpham x : DSSP){
             x.inThongTin();
         }
 
@@ -71,7 +71,7 @@ public class lad3 {
         System.out.print("Nhập tên sản phẩm muốn xóa: ");
         nhap.nextLine();
         String ten = nhap.nextLine();
-        for(SanPham x : DSSP){
+        for(sanpham x : DSSP){
            if((x.tenSP).equals(ten)){
                DSSP.remove(x); 
                System.out.println("Xóa thành công!");
@@ -79,13 +79,13 @@ public class lad3 {
            }
         }
         System.out.println("======Danh sách sản phâm sau khi xóa======");
-        for(SanPham x : DSSP){
+        for(sanpham x : DSSP){
              x.inThongTin();
         }
     }
     static void xuatGiaTriTB(){
         double tong = 0;
-        for(SanPham x : DSSP){
+        for(sanpham x : DSSP){
             tong += x.gia;
         }
         System.out.println("Giá trị trung bình của các sản phẩm là: "+tong/DSSP.size());

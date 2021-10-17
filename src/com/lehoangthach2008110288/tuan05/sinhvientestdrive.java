@@ -43,10 +43,10 @@ public class sinhvientestdrive {
                         System.out.println("KẾT THÚC!");
                         break;
                 default: 
-                        System.out.println("- Lựa chọn không hợp lệ!");
+                        System.out.println(" Lựa chọn không hợp lệ!");
 
             }
-            System.out.print("- Quay lại MENU(1:yes/0:no): ");
+            System.out.print(" Quay lại MENU" +"\n"+  "(1:yes/0:no): ");
             chon = nhap.nextInt();
         }while(chon == 1);
 
@@ -58,7 +58,7 @@ public class sinhvientestdrive {
                 sinhvien sv = new sinhvien();
                 sv.nhapThongTin();
                 DSSV.add(sv);
-                System.out.print("- Nhập thêm(1:yes/0:no): ");
+                System.out.print("Nhập thêm " +"\n"+"(1:yes/0:no): ");
                 chon = nhap.nextInt();
                 nhap.nextLine();
         }while(chon == 1);

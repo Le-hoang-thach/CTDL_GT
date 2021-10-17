@@ -3,9 +3,10 @@ package com.lehoangthach2008110288.tuan02;
 import java.util.Scanner;
 
 public class lad4 {
+    static Scanner bienNhap = new Scanner(System.in);
     public static void main(String[] args) {
         int luaChon;
-        Scanner bienNhap = new Scanner(System.in);
+        
         do{
             System.out.println("+=======MENU=======+");
             System.out.println("+>.1 Giải PT bậc 1 +");
@@ -25,7 +26,7 @@ public class lad4 {
         }while( luaChon != 4);
     }
     static void ptBac1(){
-        Scanner bienNhap = new Scanner(System.in);
+        
         double a,b;
         System.out.print("Nhập a: ");
         a = bienNhap.nextDouble();
@@ -40,7 +41,7 @@ public class lad4 {
         System.out.println("Phương trình có nghiệm : " + (-b/a));
     }
     static void ptBac2(){
-        Scanner bienNhap = new Scanner(System.in);
+        
         double a,b,c,delta,x,x1,x2;
         System.out.print("Nhập a: ");
         a = bienNhap.nextDouble();
@@ -61,7 +62,7 @@ public class lad4 {
         }
     }
     static void tiendien(){
-        Scanner bienNhap = new Scanner(System.in);
+        
         double soDien ,tien;
         System.out.print("Nhập vào số điện : ");
         soDien = bienNhap.nextDouble();

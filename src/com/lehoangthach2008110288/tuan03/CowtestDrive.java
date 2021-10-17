@@ -7,4 +7,4 @@ public class CowtestDrive {
         System.out.println("\nCân nặng: " + cow.weight +" \nGiống: " + cow.breed +" \nMàu: " + cow.color);
     }
     }
-}
+
