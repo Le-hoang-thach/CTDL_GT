@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MyLinkedListTestDrive",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan07.MyLinkedListTestDrive",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
             "name": "Launch taikhoantestdrive",
             "request": "launch",
             "mainClass": "com.lehoangthach2008110288.tuan03.baitapthem.taikhoantestdrive",
