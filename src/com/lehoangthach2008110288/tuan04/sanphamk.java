@@ -2,15 +2,15 @@ package com.lehoangthach2008110288.tuan04;
 
 import com.lehoangthach2008110288.tuan06.SanPham;
 
-public class sanpham {
+public class sanphamk {
     String tenSP;
     double gia;
 
-    sanpham() {
+    sanphamk() {
 
     }
 
-    sanpham(String t, double g) {
+    sanphamk(String t, double g) {
         tenSP = t;
         gia = g;
     }

@@ -67,7 +67,7 @@ public class SanPham {
         Comparator<SanPhamT> comparator = new Comparator<SanPhamT>() {
 
             @Override
-            public int compare(sanpham o1, sanpham o2) {
+            public int compare(sanphamk o1, sanphamk o2) {
 
                 return Double.compare(o1.gia, o2.gia);
             }
@@ -75,7 +75,7 @@ public class SanPham {
         };
         Collections.sort(DSSP, comparator);
         System.out.println("======Danh sách sản phâm sau khi sắp xếp======");
-        for (sanpham x : DSSP) {
+        for (sanphamk x : DSSP) {
             x.inThongTin();
         }
 
@@ -85,7 +85,7 @@ public class SanPham {
         System.out.print("Nhập tên sản phẩm muốn xóa: ");
         nhap.nextLine();
         String ten = nhap.nextLine();
-        for (sanpham x : DSSP) {
+        for (sanphamk x : DSSP) {
             if ((x.tenSP).equals(ten)) {
                 DSSP.remove(x);
                 System.out.println("Xóa thành công!");
@@ -93,14 +93,14 @@ public class SanPham {
             }
         }
         System.out.println("======Danh sách sản phâm sau khi xóa======");
-        for (sanpham x : DSSP) {
+        for (sanphamk x : DSSP) {
             x.inThongTin();
         }
     }
 
     static void xuatGiaTriTB() {
         double tong = 0;
-        for (sanpham x : DSSP) {
+        for (sanphamk x : DSSP) {
             tong += x.gia;
         }
         System.out.println("Giá trị trung bình của các sản phẩm là: " + tong / DSSP.size());
