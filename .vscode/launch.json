@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch taikhoantestdrive",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan03.baitapthem.taikhoantestdrive",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
+            "name": "Launch maytinhtestdrive",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan03.baitapthem.maytinhtestdrive",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
+            "name": "Launch XeTestDrive",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan03.baitapthem.XeTestDrive",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
+            "name": "Launch nhanvientestdrive",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan03.baitapthem.nhanvientestdrive",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
+            "name": "Launch SachTestDrive",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan03.baitapthem.SachTestDrive",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
             "name": "Launch sinhvientestdrive",
             "request": "launch",
             "mainClass": "com.lehoangthach2008110288.tuan03.baitapthem.sinhvientestdrive",
