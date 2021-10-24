@@ -2,7 +2,7 @@ package com.lehoangthach2008110288.tuan02;
 
 import java.util.Scanner;
 
-public class lad4 {
+public class lad04 {
     static Scanner bienNhap = new Scanner(System.in);
     public static void main(String[] args) {
         int luaChon;

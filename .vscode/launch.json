@@ -6,6 +6,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SanPham",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan04.SanPham",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
+            "name": "Launch lad2",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan04.lad2",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
+            "name": "Launch lad04",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan04.lad04",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
+            "name": "Launch lad04",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan02.lad04",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
+            "name": "Launch lad3",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan02.lad3",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
+            "name": "Launch lad2",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan02.lad2",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
+            "name": "Launch lad1",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan02.lad1",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
+            "name": "Launch lad4",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan01.lad4",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
+            "name": "Launch lad3",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan01.lad3",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
+            "name": "Launch lad2",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan01.lad2",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
+            "name": "Launch lad1",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan01.lad1",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
             "name": "Launch MyLinkedListTestDrive",
             "request": "launch",
             "mainClass": "com.lehoangthach2008110288.tuan07.MyLinkedListTestDrive",

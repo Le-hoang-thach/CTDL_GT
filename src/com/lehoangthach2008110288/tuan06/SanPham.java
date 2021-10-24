@@ -1,25 +1,28 @@
 package com.lehoangthach2008110288.tuan06;
 
+import java.util.Scanner;
+
 public class SanPham {
+    String tenSP;
     double donGia;
     double giamGia;
     String thue;
     int sl;
-    static Scanner nhap = new Scanner(System.in);
-  
-    SanPham(){
-        
-    }
- 
-    void inThongtin(){
-        System.out.println("Tên sản phẩm: "+tenSP);
-        System.out.println("Đơn giá: "+donGia);
-        System.out.println("Giảm giá: "+giamGia);
-        System.out.println("Thuế: "+thue);
+    Scanner nhap = new Scanner(System.in);
+
+    SanPham() {
 
     }
 
-    void nhapThongTin(){
+    void inThongtin() {
+        System.out.println("Tên sản phẩm: " + tenSP);
+        System.out.println("Đơn giá: " + donGia);
+        System.out.println("Giảm giá: " + giamGia);
+        System.out.println("Thuế: " + thue);
+
+    }
+
+    void nhapThongTin() {
         System.out.println("-Thông tin sản phẩm:");
         System.out.print("Tên sản phẩm: ");
         tenSP = nhap.nextLine();
@@ -30,7 +33,7 @@ public class SanPham {
         System.out.print("Thuế: ");
         nhap.nextLine();
         thue = nhap.nextLine();
-        
+
     }
-    
+
 }

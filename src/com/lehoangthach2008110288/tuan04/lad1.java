@@ -10,18 +10,18 @@ public class lad1 {
         double tong = 0;
         Scanner n = new Scanner(System.in);
         ArrayList<Double> list = new ArrayList<>();
-        while(true){
+        while (true) {
             System.out.printf("Nhập phần tử thứ %d: ", list.size());
             b = n.nextDouble();
             list.add(b);
             n.nextLine();
             System.out.println("Bạn có muốn nhập thêm không(Y/N): ");
             a = n.nextLine();
-            if(a.equals("N"))
-                 break;
+            if (a.equals("N"))
+                break;
         }
         System.out.println("Các phần tử của list");
-        for(Double x : list){
+        for (Double x : list) {
             System.out.printf("+ %.2f\n", x);
             tong += x;
         }

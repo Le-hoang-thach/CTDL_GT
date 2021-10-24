@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class lad02 {
+public class lad2 {
     static Scanner n = new Scanner(System.in);
     static ArrayList<String> DS = new ArrayList<String>();
     public static void main(String[] args) {
