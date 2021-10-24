@@ -1,12 +1,17 @@
 package com.lehoangthach2008110288.tuan04;
 
+import com.lehoangthach2008110288.tuan06.SanPham;
+
 public class sanpham {
     String tenSP;
     double gia;
-    int nhap;
-    Scanner n = new Scanner(System.in);
+    
+    
+    sanpham(){
 
-    SanPham(String t, double g){
+    }
+
+    sanpham(String t, double g){
         tenSP = t;
         gia = g;
     }

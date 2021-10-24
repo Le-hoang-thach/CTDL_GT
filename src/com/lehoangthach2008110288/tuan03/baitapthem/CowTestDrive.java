@@ -4,8 +4,8 @@ public class CowtestDrive {
     public static void main(String[] args) {
         Cow cow;
         cow = new Cow();
-        System.out.println();
-        Cow cow = new Cow("Sapparen","Nâu",15.5);
+
+        Cow cow = new Cow("sapparen","nau",15.5);
         cow.inThongTin();
-    }
+    } 
 }

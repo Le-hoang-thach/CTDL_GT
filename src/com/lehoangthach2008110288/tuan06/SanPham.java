@@ -5,7 +5,7 @@ public class SanPham {
     double giamGia;
     String thue;
     int sl;
-    Scanner nhap = new Scanner(System.in);
+    static Scanner nhap = new Scanner(System.in);
   
     SanPham(){
         

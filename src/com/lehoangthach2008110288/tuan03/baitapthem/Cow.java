@@ -1,15 +1,17 @@
 package com.lehoangthach2008110288.tuan03.baitapthem;
 
 public class Cow {
-    Sring ten;
+    String ten;
     String mauSac;
     double canNang;
-    String gioiTinh;
-    Cow(){}
-    Cow(double CN, String mau, String gt){
-        canNang = CN;
-        mauSac = mau;
-        gioiTinh = gt;
+  
+    Cow(){
+
+    }
+    Cow(String name, String color, double weight){
+       ten = name;
+       mauSac = color;
+        canNang = weight;
     }
     void inThongTin(){
         System.out.println("Tên con bò : " + ten);
