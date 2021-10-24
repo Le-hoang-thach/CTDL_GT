@@ -6,13 +6,13 @@ public class Node {
     // Liên kết đén nút tiếp theo
     Node next ; // Biến tham chiếu kiểu Node
 
-    public Node(){} // hàm tạo rỗng
+     Node(){} // hàm tạo rỗng
     
-    public Node(int d){  // hàm tạo 1 tham chiếu 
+     Node(int d){  // hàm tạo 1 tham chiếu 
           data = d ;
     }
 
-    public Node(int d , Node n){ // hàm tạo 2 tham chiếu 
+    void Node(int d , Node n){ // hàm tạo 2 tham chiếu 
         data = d ;
         next =  n ;
     }
