@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch QueueDemoProgram",
+            "request": "launch",
+            "mainClass": "vn.giadinh.edu.tuan08.QueueDemoProgram",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
+            "name": "Launch QueueDemoProgram",
+            "request": "launch",
+            "mainClass": "baitaptrenlop.tuan08.QueueDemoProgram",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Stack",
+            "request": "launch",
+            "mainClass": "baitaptrenlop.tuan08.Stack",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
+            "name": "Launch StackDemoProgram",
+            "request": "launch",
+            "mainClass": "baitaptrenlop.tuan08.StackDemoProgram",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
             "name": "Launch SanPham",
             "request": "launch",
             "mainClass": "com.lehoangthach2008110288.tuan04.SanPham",
