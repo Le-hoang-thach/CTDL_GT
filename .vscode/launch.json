@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.kiemtragiuaky.Main",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
+            "name": "Launch sinhvientestdrive",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.tuan05.sinhvientestdrive",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
+            "name": "Launch AppleTestDrive",
+            "request": "launch",
+            "mainClass": "com.lehoangthach2008110288.kiemtragiuaky.AppleTestDrive",
+            "projectName": "CTDL_GT_9294b1e2"
+        },
+        {
+            "type": "java",
             "name": "Launch QueueDemoProgram",
             "request": "launch",
             "mainClass": "vn.giadinh.edu.tuan08.QueueDemoProgram",
