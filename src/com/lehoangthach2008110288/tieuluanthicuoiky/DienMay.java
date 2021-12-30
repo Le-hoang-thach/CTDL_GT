@@ -1,21 +1,24 @@
-package com.lehoangthach2008110288.thicuoiky;
+package com.lehoangthach2008110288.tieuluanthicuoiky;
+
 
 import java.util.Date;
 import java.util.Scanner;
 
-public class Food{
-	int id;
+
+
+public class DienMay {
+    int id;
 	String name;
 	float gia;
 	Date ngayNhapKho;
 	
-	Food next;
+	DienMay next;
 	
-	Food (){
+	DienMay(){
 		
 	}
 	
-	Food(int _id, String _name, float _gia, Date _ngayNhapKho){
+	DienMay(int _id, String _name, float _gia, Date _ngayNhapKho){
 		id = _id;
 		name = _name;
 		gia = _gia;
@@ -36,11 +39,14 @@ public class Food{
 	
 	public void inTT() {
 		System.out.println("Tên hàng: " + name);
-		System.out.println("Loại hàng: thực phẩm ");  
-		System.out.println("Id: " + id);
-		System.out.println("Giá : " + gia);
-		System.out.println("Ngày nhập kho : " + ngayNhapKho);
-		 
-		
+        System.out.println(" Loại hàng: Điện máy");
+        System.out.println(" Id: " + id);
+        System.out.println(" Giá: " + gia);
+        System.out.println(" Ngày nhập: "+ ngayNhapKho);
+	}
+	
+	public String GetName() {
+		System.out.println(name);
+		return name;
 	}
 }
