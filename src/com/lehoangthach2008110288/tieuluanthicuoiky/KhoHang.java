@@ -22,9 +22,9 @@ public class KhoHang {
 	}
 	
 	public void ThemHang(Scanner scanner) {
-		System.out.println("Bạn muốn thêm loại hàng nào?");
-		System.out.println("1) Điện máy	2) Sành Sứ	3) Thực Phẩm ");
-        System.out.println("----> Lựa chọn: ");
+		System.out.println("Ban muon them loai hang nao?");
+		System.out.println("1) Dien may"+"\n"+	"2) Sanh Su"+"\n"+	"3) Thuc Pham ");
+        System.out.println("Lua chon: ");
 		
 		int loaiHang = scanner.nextInt();
 		
@@ -68,15 +68,15 @@ public class KhoHang {
 	}
 	
 	public void SuaHang(Scanner scanner) {
-		System.out.println("Bạn muốn sửa hàng theo Id hay loại hàng?");
-        System.out.println(" 1) loại hàng	2) ID hàng");
-        System.out.println(" ----> Lựa chọn: ");
+		System.out.println("Ban muon sua hang theo Id hay loai hang?");
+        System.out.println(" 1) loai hang"+"\n"+"	2) ID hang");
+        System.out.println("Lua chon: ");
         int cachsua = scanner.nextInt();
 		
 		if (cachsua == 1) {
-			System.out.println("Hãy nhập thông tin hàng bạn muốn sửa");
-            System.out.println(" Loại hàng: 1) Điện máy	2) Sành Sứ	3) Thực Phẩm ");
-            System.out.println("----> Lựa chọn: "); 
+			System.out.println("Hay nhap thong tin hang ban muon sua");
+            System.out.println("Loai hang:"+"\n"+"1) Dien may"+"\n"+	"2) Sanh Su"+"\n"+	"3) Thuc Pham ");
+        	System.out.println("Lua chon: "); 
             int loaiHang = scanner.nextInt();
 			if (loaiHang == 1) {
 				DienMay cur = headDienMay;
@@ -84,18 +84,18 @@ public class KhoHang {
 					cur.inTT();
 					cur = cur.next;
 				}
-				System.out.print("Chọn hàng mà bạn muốn sửa theo thứ tự trên xuống: "); 
+				System.out.print("Chon hang ma ban muon sua theo thu tu tren xuong: "); 
                 int hangthu = scanner.nextInt();
 				cur = headDienMay;
 				for (int i = 0; i < hangthu; i++) {
 					cur = cur.next;
 					cur.inTT();
-					System.out.println("Hãy sửa lại thông tin");
+					System.out.println("Hay sua lai thong tin");
 					
-					System.out.print("Tên hàng:"); scanner.nextLine(); cur.name = scanner.nextLine();
-					System.out.print("ID hàng:");	cur.id = scanner.nextInt();
-					System.out.print("Giá hàng:"); cur.gia = scanner.nextFloat();
-					System.out.print("Ngày nhập hàng theo mẫu dd-MM-yyyy:");
+					System.out.print("Ten hang:"); scanner.nextLine(); cur.name = scanner.nextLine();
+					System.out.print("ID hang:");	cur.id = scanner.nextInt();
+					System.out.print("Gia hang:"); cur.gia = scanner.nextFloat();
+					System.out.print("Ngay nhap hang theo mau dd-MM-yyyy:");
 					
 					Date b = null;
 					scanner.nextLine();
@@ -117,18 +117,18 @@ public class KhoHang {
 					cur.inTT();
 					cur = cur.next;
 				}
-				System.out.print("Chọn hàng mà bạn muốn sửa theo thứ tự trên xuống 1 2 3: "); 
+				System.out.print("Chon hang ma ban muon sua theo thu tu tren xuong 1 2 3: "); 
                 int hangthu = scanner.nextInt();
 				cur = headSanhSu;
 				for (int i = 0; i < hangthu; i++) {
 					cur = cur.next;
 					cur.inTT();
-					System.out.println("Hãy sửa lại thông tin");
+					System.out.println("Hay sua lai thong tin");
 					
-					System.out.print("Tên hàng:"); scanner.nextLine(); cur.name = scanner.nextLine();
-					System.out.print("ID hàng:");	cur.id = scanner.nextInt();
-					System.out.print("Giá hàng:"); cur.gia = scanner.nextFloat();
-					System.out.print("Ngày nhập hàng theo mẫu (dd-MM-yyyy):");
+					System.out.print("Ten hang:"); scanner.nextLine(); cur.name = scanner.nextLine();
+					System.out.print("ID hang:");	cur.id = scanner.nextInt();
+					System.out.print("Gia hang:"); cur.gia = scanner.nextFloat();
+					System.out.print("Ngay nhap hang theo mau (dd-MM-yyyy):");
 					
 					Date b = null;
 					String date = scanner.nextLine();
@@ -149,18 +149,18 @@ public class KhoHang {
 					cur.inTT();
 					cur = cur.next;
 				}
-				System.out.print("Chọn hàng mà bạn muốn sửa theo thứ tự trên xuống 1 2 3: "); 
+				System.out.print("Chon hang ma ban muon sua theo thu tu tren xuong 1 2 3: "); 
                 int hangthu = scanner.nextInt();
 				cur = headThucPham;
 				for (int i = 0; i < hangthu; i++) {
 					cur = cur.next;
 					cur.inTT();
-					System.out.println("Hãy sửa lại thông tin");
+					System.out.println("Hay sua lai thong tin");
 					
-					System.out.print("Tên hàng:"); scanner.nextLine(); cur.name = scanner.nextLine();
-					System.out.print("ID hàng:");	cur.id = scanner.nextInt();
-					System.out.print("Giá hàng:"); cur.gia = scanner.nextFloat();
-					System.out.print("Ngày nhập hàng theo mẫu (dd-MM-yyyy):");
+					System.out.print("Ten hang:"); scanner.nextLine(); cur.name = scanner.nextLine();
+					System.out.print("ID hang:");	cur.id = scanner.nextInt();
+					System.out.print("Gia hang:"); cur.gia = scanner.nextFloat();
+					System.out.print("Ngay nhap hang theo mau (dd-MM-yyyy):");
 					
 					Date b = null;
 					scanner.nextLine();
@@ -176,7 +176,7 @@ public class KhoHang {
 				}
 			}
 		}else if (cachsua == 2) {
-			System.out.print("Hãy nhập id hàng bạn cần sửa: "); 
+			System.out.print("Hay nhap id hang ban can sua: "); 
             int id = scanner.nextInt();
 			DienMay curDM = headDienMay;
 			SanhSu curSS = headSanhSu;
@@ -185,11 +185,15 @@ public class KhoHang {
 			while (curDM != null) {
 				if (curDM.id == id) {
 					curDM.inTT();
-					System.out.println("Hãy sửa lại thông tin");
-					System.out.print("Tên hàng:"); scanner.nextLine(); curDM.name = scanner.nextLine();
-					System.out.print("ID hàng:");	curDM.id = scanner.nextInt();
-					System.out.print("Giá hàng:"); curDM.gia = scanner.nextFloat();
-					System.out.print("Ngày nhập hàng theo mẫu (dd-MM-yyyy):");
+					System.out.println("Hay sua lai thong tin");
+					System.out.print("Ten hang:"); 
+					scanner.nextLine(); 
+					curDM.name = scanner.nextLine();
+					System.out.print("ID hang:");	
+					curDM.id = scanner.nextInt();
+					System.out.print("Gia hang:"); 
+					curDM.gia = scanner.nextFloat();
+					System.out.print("Ngay nhap hang theo mau (dd-MM-yyyy):");
 					
 					Date b = null;
 					scanner.nextLine();
@@ -210,11 +214,15 @@ public class KhoHang {
 			while (curSS != null) {
 				if (curSS.id == id) {
 					curSS.inTT();
-					System.out.println("Hãy sửa lại thông tin");
-					System.out.print("Tên hàng:"); scanner.nextLine(); curSS.name = scanner.nextLine();
-					System.out.print("ID hàng:");	curSS.id = scanner.nextInt();
-					System.out.print("Giá hàng:"); curSS.gia = scanner.nextFloat();
-					System.out.print("Ngày nhập hàng theo mẫu (dd-MM-yyyy):");
+					System.out.println("Hay sua lai thong tin");
+					System.out.print("Ten hang:"); 
+					scanner.nextLine(); 
+					curSS.name = scanner.nextLine();
+					System.out.print("ID hang:");	
+					curSS.id = scanner.nextInt();
+					System.out.print("Gia hang:"); 
+					curSS.gia = scanner.nextFloat();
+					System.out.print("Ngay nhap hang theo mau (dd-MM-yyyy):");
 					
 					Date b = null;
 					scanner.nextLine();
@@ -235,11 +243,11 @@ public class KhoHang {
 			while (curTP != null) {
 				if (curTP.id == id) {
 					curTP.inTT();
-					System.out.println("Hãy sửa lại thông tin");
-					System.out.print("Tên hàng:"); scanner.nextLine(); curTP.name = scanner.nextLine();
-					System.out.print("ID hàng:");	curTP.id = scanner.nextInt();
-					System.out.print("Giá hàng:"); curTP.gia = scanner.nextFloat();
-					System.out.print("Ngày nhập hàng theo mẫu:");
+					System.out.println("Hay sua lai thong tin");
+					System.out.print("Ten hang:"); scanner.nextLine(); curTP.name = scanner.nextLine();
+					System.out.print("ID hang:");	curTP.id = scanner.nextInt();
+					System.out.print("Gia hang:"); curTP.gia = scanner.nextFloat();
+					System.out.print("Ngay nhap hang theo mau:");
 					
 					Date b = null;
 					scanner.nextLine();
@@ -259,14 +267,14 @@ public class KhoHang {
 	
 	int NhapId(Scanner scanner, int loaihang) {
 		
-		System.out.print("Hãy nhập ID hàng: ");
+		System.out.print("Hay nhap ID hang: ");
 		int id = scanner.nextInt();
 		
 		if (loaihang == 1) {
 			DienMay cur = headDienMay;
 			while (cur != null) {
 				if (cur.id == id) {
-					System.out.println("Id này đã tồn tại");
+					System.out.println("Id nay đa ton tai");
 					return NhapId(scanner, loaihang);
 				}
 				cur = cur.next;
@@ -277,7 +285,7 @@ public class KhoHang {
 			SanhSu cur = headSanhSu;
 			while (cur != null) {
 				if (cur.id == id) {
-					System.out.print("Id này đã tồn tại");
+					System.out.print("Id nay đa ton tai");
 					return NhapId(scanner, loaihang);
 				}
 				cur = cur.next;
@@ -288,7 +296,7 @@ public class KhoHang {
 			ThucPham cur = headThucPham;
 			while (cur != null) {
 				if (cur.id == id) {
-					System.out.print("Id này đã tồn tại");
+					System.out.print("Id nay đa ton tai");
 					return NhapId(scanner, loaihang);
 				}
 				cur = cur.next;
@@ -324,14 +332,14 @@ public class KhoHang {
 	}
 	
 	public void XoaHang(Scanner scanner) {
-		System.out.println("Muốn xóa theo cách nào");
-		System.out.print("1) Theo Id	2) Theo tên	3) Theo giá ");
-        System.out.println("----> Lựa chọn: ");
+		System.out.println("Muon xoa theo cach nao");
+		System.out.println("1) Theo Id"+"\n"+	"2) Theo ten"+"\n"+"3) Theo gia ");
+        System.out.println("Lua chon: ");
 		
 		int cachxoa = scanner.nextInt();
 		
 		if (cachxoa == 1) {
-			System.out.print("Hãy nhập Id hàng cần xóa: ");
+			System.out.print("Hay nhap Id hang can xoa: ");
 			int idCanXoa = scanner.nextInt();
 			
 			if (headDienMay.id == idCanXoa) {
@@ -376,11 +384,11 @@ public class KhoHang {
 				}
 				curTP = curTP.next;
 			}
-			System.out.println("Đã xóa");
+			System.out.println("Đa xoa");
 		}
 		
 		if (cachxoa == 2) {
-			System.out.print("Hãy nhập tên hàng cần xóa: ");
+			System.out.print("Hay nhap ten hang can xoa: ");
 			scanner.nextLine();
 			String idCanXoa = scanner.nextLine();
 			
@@ -432,7 +440,8 @@ public class KhoHang {
 		}
 
 		if (cachxoa == 3) {
-			System.out.println("Hãy nhập giá hàng cần xóa"); float giacanxoa = scanner.nextFloat();
+			System.out.println("Hay nhap gia hang can xoa"); 
+			float giacanxoa = scanner.nextFloat();
 			
 			if (headDienMay.gia == giacanxoa) {
 				headDienMay = headDienMay.next;
@@ -476,23 +485,23 @@ public class KhoHang {
 				}
 				curTP = curTP.next;
 			}
-			System.out.println("Đã xóa");
+			System.out.println("Đa xoa");
 		}
 		
 	}
 	
 	public void TimHang(Scanner scanner) {
-		System.out.println("Muốn tìm hàng theo cách nào");
-		System.out.print("1) Theo loại	2) Theo giá	3) Theo ngày nhập");
-        System.out.println(" ----> Lựa chọn: ");
+		System.out.println("Muon tim hang theo cach nao");
+		System.out.print("1) Theo loai"+"\n"+"2) Theo gia"+"\n"+"3) Theo ngay nhap");
+        System.out.println("Lua chon: ");
 		
 		int cachtim = scanner.nextInt();
 		
 		
 		if (cachtim == 1) {
-			System.out.println("\nHãy nhập Loại hàng bạn muốn tìm");
-			System.out.print("1) Điện máy	2) Sành sứ	3) Thực phẩm");
-            System.out.println(" ----> Lựa chọn: ");
+			System.out.println("\nHay nhap Loai hang ban muon tim");
+			System.out.print("1) Dien may"+"\n"+"2) Sanh su"	+"\n"+"3) Thuc pham");
+            System.out.println("Lua chon: ");
 			int loai = scanner.nextInt();
 			
 			if (loai == 1) {
@@ -517,9 +526,9 @@ public class KhoHang {
 			
 			
 		}else if (cachtim == 2) {
-			System.out.print("Hãy nhập khoảng giá của hàng bạn muốn tìm\n Khoảng : ");
+			System.out.print("Hay nhap khoang gia cua hang ban muon tim\n Khoang : ");
 			float start = scanner.nextFloat();
-			System.out.print("Đến: ");
+			System.out.print("\n"+"Đen: ");
 			float end = scanner.nextFloat();
 			
 			DienMay curDM = headDienMay;
@@ -547,7 +556,7 @@ public class KhoHang {
 			}
 			
 		}else if (cachtim == 3) {
-			System.out.println("Hãy nhập khoảng ngày nhập kho sản phẩm bạn muốn tìm (dd-MM-yyyy)\nTừ ngày: ");
+			System.out.println("Hay nhap khoang ngay nhap kho san pham ban muon tim (dd-MM-yyyy)\nTu ngay: ");
 			scanner.nextLine();
 			String date = scanner.nextLine();
 			
@@ -557,16 +566,16 @@ public class KhoHang {
 			try {
 				startDate = dateFormat.parse(date);
 			} catch (ParseException e) {
-				System.err.println("Bạn đã nhập sai mẫu ngày hãy chọn (Tìm hàng ở Menu và thao tác lại)");
+				System.err.println("Ban đa nhap sai mau ngay hay chon (Tim hang o Menu va thao tac lai)");
 				return;
 			}
 			
-			System.out.println("Đến ngày: ");
+			System.out.println("Đen ngay: ");
 			Date endDate;
 			try {
 				endDate = dateFormat.parse(date);
 			} catch (ParseException e) {
-				System.err.println("Bạn đã nhập sai mẫu ngày hãy chọn (Tìm hàng ở Menu và thao tác lại)");
+				System.err.println("Ban đa nhap sai mau ngay hay chon (Tim hang o Menu va thao tac lai)");
 				return;
 			}
 			
@@ -649,19 +658,19 @@ public class KhoHang {
 		tongSLHang = tongSLDienMay + tongSLSanhSu + tongSLThucPham;
 		tongGiaTri = tongGiaTriDienMay + tongGiaTriSanhSu + tongGiaTriThucPham;
 		
-		System.out.println("Tổng số lượng hàng hóa trong kho: " + tongSLHang + " sản phẩm");
-		System.out.println("Tổng giá trị nhập kho: " + tongGiaTri + "VND\n");
+		System.out.println("Tong so luong hang hoa trong kho: " + tongSLHang + " san pham");
+		System.out.println("Tong gia tri nhap kho: " + tongGiaTri + "VND\n");
 		
-		System.out.println("Điện máy có: " + tongSLDienMay + " sản phẩm");
-		System.out.println("Sành sứ có: " + tongSLSanhSu + " sản phẩm");
-		System.out.println("Thực phẩm có: " + tongSLThucPham + " sản phẩm");
+		System.out.println("Dien may co: " + tongSLDienMay + " san pham");
+		System.out.println("Sanh su co: " + tongSLSanhSu + " san pham");
+		System.out.println("Thuc pham co: " + tongSLThucPham + " san pham");
 		
 	}
 	
 	public void SapXep(Scanner scanner) {
-		System.out.println("Bạn muốn sắp xếp theo?");
-        System.out.println(" 1) Giá nhập	2) Ngày nhập ");
-        System.out.println("----> Lựa chọn: "); 
+		System.out.println("Ban muon sap xep theo?");
+        System.out.println(" 1) Gia nhap"+"\n"+	"2) Ngay nhap ");
+        System.out.println("Lua chon: "); 
         int luachon = scanner.nextInt();
 		
 		if (luachon == 1) {
@@ -676,7 +685,7 @@ public class KhoHang {
 			}
 			
 		}else {
-			System.out.println("Bạn đã nhập sai\n");
+			System.out.println("Ban đa nhap sai\n");
 			return;
 		}
 		

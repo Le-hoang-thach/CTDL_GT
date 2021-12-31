@@ -56,14 +56,14 @@ public class Main {
 		while (true){
         	System.out.println();
     		System.out.println("                 MENU           ");
-            System.out.println("1)  Thêm hàng			    ");
-            System.out.println("2)  In danh sách hàng hóa   ");
-            System.out.println("3)  Xóa hàng    		    ");
-            System.out.println("4)  Sửa thông tin hàng hóa  ");
-            System.out.println("5)  Tìm hàng    		    ");
-            System.out.println("6)  Thống kê kho hàng    	");
-            System.out.println("7)  Sắp xếp kho hàng    	");
-            System.out.println("8)  Thoát            		");
+            System.out.println("1)  Them hang			    ");
+            System.out.println("2)  In danh sach hang hoa   ");
+            System.out.println("3)  Xoa hang    		    ");
+            System.out.println("4)  Sua thong tin hang hoa  ");
+            System.out.println("5)  Tim hang    		    ");
+            System.out.println("6)  Thong ke kho hang    	");
+            System.out.println("7)  Sap xep kho hang    	");
+            System.out.println("8)  Exit            		");
             System.out.println("-----------------------------------------");
             System.out.print("Chọn chức năng: ");
             int key = bienNhap.nextInt();
