@@ -5,17 +5,17 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-public class KhoHang {
-    DienMay headDienMay;
-	SanhSu headSanhSu;
-	ThucPham headThucPham;
+public class Wasehouse {
+    Electric headDienMay;
+	Crockery headSanhSu;
+	Food headThucPham;
 	SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 	
-	KhoHang(){
+	Wasehouse(){
 		
 	}
 	
-	KhoHang (DienMay _headDienMay, SanhSu _headSanhSu, ThucPham _headThucPham){
+	Wasehouse (Electric _headDienMay, Crockery _headSanhSu, Food _headThucPham){
 		headDienMay = _headDienMay;
 		headSanhSu = _headSanhSu;
 		headThucPham = _headThucPham;
@@ -29,10 +29,10 @@ public class KhoHang {
 		int loaiHang = scanner.nextInt();
 		
 		if (loaiHang == 1) {
-			DienMay cur = headDienMay;
+			Electric cur = headDienMay;
 			while (cur != null) {
 				if (cur.next == null) {
-					DienMay itemMoi = new DienMay();
+					Electric itemMoi = new Electric();
 					itemMoi.id = NhapId(scanner, loaiHang);
 					itemMoi.NhapTT(scanner);
 					cur.next = itemMoi;
@@ -41,10 +41,10 @@ public class KhoHang {
 				cur = cur.next;
 			}
 		}else if (loaiHang == 2) {
-			SanhSu cur = headSanhSu;
+			Crockery cur = headSanhSu;
 			while (cur != null) {
 				if (cur.next == null) {
-					SanhSu itemMoi = new SanhSu();
+					Crockery itemMoi = new Crockery();
 					itemMoi.id = NhapId(scanner, loaiHang);
 					itemMoi.NhapTT(scanner);
 					cur.next = itemMoi;
@@ -53,10 +53,10 @@ public class KhoHang {
 				cur = cur.next;
 			}
 		}else if (loaiHang == 3) {
-			ThucPham cur = headThucPham;
+			Food cur = headThucPham;
 			while (cur != null) {
 				if (cur.next == null) {
-					ThucPham itemMoi = new ThucPham();
+					Food itemMoi = new Food();
 					itemMoi.id = NhapId(scanner, loaiHang);
 					itemMoi.NhapTT(scanner);
 					cur.next = itemMoi;
@@ -79,7 +79,7 @@ public class KhoHang {
         	System.out.println("Lua chon: "); 
             int loaiHang = scanner.nextInt();
 			if (loaiHang == 1) {
-				DienMay cur = headDienMay;
+				Electric cur = headDienMay;
 				while (cur != null) {
 					cur.inTT();
 					cur = cur.next;
@@ -112,7 +112,7 @@ public class KhoHang {
 			}
 			
 			if (loaiHang == 2) {
-				SanhSu cur = headSanhSu;
+				Crockery cur = headSanhSu;
 				while (cur != null) {
 					cur.inTT();
 					cur = cur.next;
@@ -144,7 +144,7 @@ public class KhoHang {
 			}
 			
 			if (loaiHang == 3) {
-				ThucPham cur = headThucPham;
+				Food cur = headThucPham;
 				while (cur != null) {
 					cur.inTT();
 					cur = cur.next;
@@ -178,9 +178,9 @@ public class KhoHang {
 		}else if (cachsua == 2) {
 			System.out.print("Hay nhap id hang ban can sua: "); 
             int id = scanner.nextInt();
-			DienMay curDM = headDienMay;
-			SanhSu curSS = headSanhSu;
-			ThucPham curTP = headThucPham;
+			Electric curDM = headDienMay;
+			Crockery curSS = headSanhSu;
+			Food curTP = headThucPham;
 			
 			while (curDM != null) {
 				if (curDM.id == id) {
@@ -271,7 +271,7 @@ public class KhoHang {
 		int id = scanner.nextInt();
 		
 		if (loaihang == 1) {
-			DienMay cur = headDienMay;
+			Electric cur = headDienMay;
 			while (cur != null) {
 				if (cur.id == id) {
 					System.out.println("Id nay đa ton tai");
@@ -282,7 +282,7 @@ public class KhoHang {
 		}
 		
 		if (loaihang == 2) {
-			SanhSu cur = headSanhSu;
+			Crockery cur = headSanhSu;
 			while (cur != null) {
 				if (cur.id == id) {
 					System.out.print("Id nay đa ton tai");
@@ -293,7 +293,7 @@ public class KhoHang {
 		}
 		
 		if (loaihang == 3) {
-			ThucPham cur = headThucPham;
+			Food cur = headThucPham;
 			while (cur != null) {
 				if (cur.id == id) {
 					System.out.print("Id nay đa ton tai");
@@ -306,9 +306,9 @@ public class KhoHang {
 	}
 	
 	public void InTT(){
-		DienMay curDM = headDienMay;
-		SanhSu curSS = headSanhSu;
-		ThucPham curTP = headThucPham;
+		Electric curDM = headDienMay;
+		Crockery curSS = headSanhSu;
+		Food curTP = headThucPham;
 		
 		while (curDM != null) {
 			curDM.inTT();
@@ -357,9 +357,9 @@ public class KhoHang {
 				return;
 			}
 			
-			DienMay curDM = headDienMay;
-			SanhSu curSS = headSanhSu;
-			ThucPham curTP = headThucPham;
+			Electric curDM = headDienMay;
+			Crockery curSS = headSanhSu;
+			Food curTP = headThucPham;
 			
 			while (curDM.next != null) {
 				if (curDM.next.id == idCanXoa) {
@@ -409,9 +409,9 @@ public class KhoHang {
 				return;
 			}
 			
-			DienMay curDM = headDienMay;
-			SanhSu curSS = headSanhSu;
-			ThucPham curTP = headThucPham;
+			Electric curDM = headDienMay;
+			Crockery curSS = headSanhSu;
+			Food curTP = headThucPham;
 			
 			while (curDM.next != null) {
 				if (curDM.next.name.equalsIgnoreCase(idCanXoa)) {
@@ -458,9 +458,9 @@ public class KhoHang {
 				return;
 			}
 			
-			DienMay curDM = headDienMay;
-			SanhSu curSS = headSanhSu;
-			ThucPham curTP = headThucPham;
+			Electric curDM = headDienMay;
+			Crockery curSS = headSanhSu;
+			Food curTP = headThucPham;
 			
 			while (curDM.next != null) {
 				if (curDM.next.gia == giacanxoa) {
@@ -505,19 +505,19 @@ public class KhoHang {
 			int loai = scanner.nextInt();
 			
 			if (loai == 1) {
-				DienMay cur = headDienMay;
+				Electric cur = headDienMay;
 				while (cur != null) {
 					cur.inTT();
 					cur = cur.next;
 				}
 			}else if (loai == 2) {
-				SanhSu cur = headSanhSu;
+				Crockery cur = headSanhSu;
 				while (cur != null) {
 					cur.inTT();
 					cur = cur.next;
 				}
 			}else if (loai == 3) {
-				ThucPham cur = headThucPham;
+				Food cur = headThucPham;
 				while (cur != null) {
 					cur.inTT();
 					cur = cur.next;
@@ -531,9 +531,9 @@ public class KhoHang {
 			System.out.print("\n"+"Đen: ");
 			float end = scanner.nextFloat();
 			
-			DienMay curDM = headDienMay;
-			SanhSu curSS = headSanhSu;
-			ThucPham curTP = headThucPham;
+			Electric curDM = headDienMay;
+			Crockery curSS = headSanhSu;
+			Food curTP = headThucPham;
 			
 			while (curDM != null) {
 				if (curDM.gia >= start && curDM.gia <= end)
@@ -579,7 +579,7 @@ public class KhoHang {
 				return;
 			}
 			
-			DienMay curDM = headDienMay;
+			Electric curDM = headDienMay;
 			while (curDM != null) {
 				if (curDM.ngayNhapKho.compareTo(startDate) >= 0 && curDM.ngayNhapKho.compareTo(startDate) <= 0) {
 					count++;
@@ -595,7 +595,7 @@ public class KhoHang {
 				System.out.println();
 			}
 			
-			SanhSu curSS = headSanhSu;
+			Crockery curSS = headSanhSu;
 			while (curSS != null) {
 				if (curSS.ngayNhapKho.compareTo(startDate) >= 0 && curSS.ngayNhapKho.compareTo(startDate) <= 0) {
 					count++;
@@ -610,7 +610,7 @@ public class KhoHang {
 				System.out.println();
 			}
 			
-			ThucPham curTP = headThucPham;
+			Food curTP = headThucPham;
 			while (curTP != null) {
 				if (curTP.ngayNhapKho.compareTo(startDate) >= 0 && curTP.ngayNhapKho.compareTo(startDate) <= 0) {
 					count++;
@@ -633,9 +633,9 @@ public class KhoHang {
 		float tongGiaTriSanhSu = 0;
 		float tongGiaTriThucPham = 0;
 		
-		DienMay curDM = headDienMay;
-		SanhSu curSS = headSanhSu;
-		ThucPham curTP = headThucPham;
+		Electric curDM = headDienMay;
+		Crockery curSS = headSanhSu;
+		Food curTP = headThucPham;
 		
 		while (curDM != null) {
 			tongSLDienMay++;
@@ -676,9 +676,9 @@ public class KhoHang {
 		if (luachon == 1) {
 			
 		}else if (luachon == 2) {
-			DienMay curDM = headDienMay;
-			SanhSu curSS = headSanhSu;
-			ThucPham curTP = headThucPham;
+			Electric curDM = headDienMay;
+			Crockery curSS = headSanhSu;
+			Food curTP = headThucPham;
 			
 			while (curDM != null) {
 				

@@ -1,21 +1,24 @@
 package com.lehoangthach2008110288.tieuluanthicuoiky;
 
+
 import java.util.Date;
 import java.util.Scanner;
 
-public class ThucPham {
+
+
+public class Electric {
     int id;
 	String name;
 	float gia;
 	Date ngayNhapKho;
 	
-	ThucPham next;
+	Electric next;
 	
-	ThucPham(){
+	Electric(){
 		
 	}
 	
-	ThucPham(int _id, String _name, float _gia, Date _ngayNhapKho){
+	Electric(int _id, String _name, float _gia, Date _ngayNhapKho){
 		id = _id;
 		name = _name;
 		gia = _gia;
@@ -36,7 +39,7 @@ public class ThucPham {
 	
 	public void inTT() {
 		System.out.println("Ten hang: " + name);
-        System.out.println(" Loai hang: Thuc Pham");
+        System.out.println(" Loai hang: Dien may");
         System.out.println(" Id: " + id);
         System.out.println(" Gia: " + gia);
         System.out.println(" Ngay nhap: "+ ngayNhapKho);

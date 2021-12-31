@@ -3,19 +3,19 @@ package com.lehoangthach2008110288.tieuluanthicuoiky;
 import java.util.Date;
 import java.util.Scanner;
 
-public class SanhSu {
+public class Crockery {
     int id;
 	String name;
 	float gia;
 	Date ngayNhapKho;
 	
-	SanhSu next;
+	Crockery next;
 	
-	SanhSu(){
+	Crockery(){
 		
 	}
 	
-	SanhSu(int _id, String _name, float _gia, Date _ngayNhapKho){
+	Crockery(int _id, String _name, float _gia, Date _ngayNhapKho){
 		id = _id;
 		name = _name;
 		gia = _gia;
