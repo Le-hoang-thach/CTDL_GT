@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
-
+	static int key;
 	static Scanner bienNhap = new Scanner(System.in);
 	public static KhoHang kho = new KhoHang();
 	
@@ -81,7 +81,7 @@ public class Main {
 //		}
 //		System.out.println(b);
 		
-		while (true){
+		do{
         	System.out.println();
     		System.out.println("                 MENU           ");
             System.out.println("1)  Them hang			    ");
@@ -94,7 +94,7 @@ public class Main {
             System.out.println("8)  Exit            		");
             System.out.println("-----------------------------------------");
             System.out.print("Choon chuc nang: ");
-            int key = bienNhap.nextInt();
+            key = bienNhap.nextInt();
             
             switch(key){
         	case 1:	ThemHang(kho);break;
@@ -104,9 +104,10 @@ public class Main {
         	case 5:	TimHang(kho);break;
         	case 6:	ThongKeKho(kho);break;
         	case 7:	SapXepKhoHang(kho);break;
-        	default: System.out.println("Bạn đã nhập sai"); break;
+			case 8: System.out.println("Thank You, See you again");break;
+        	default: System.out.println("Ban da nhap sai"); break;
         	}
-		}
+		}while(key !=8) ;
 	}
 	
 	public static void ThemHang(KhoHang kho) {

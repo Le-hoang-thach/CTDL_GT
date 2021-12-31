@@ -69,7 +69,7 @@ public class KhoHang {
 	
 	public void SuaHang(Scanner scanner) {
 		System.out.println("Ban muon sua hang theo Id hay loai hang?");
-        System.out.println(" 1) loai hang"+"\n"+"	2) ID hang");
+        System.out.println(" 1) loai hang"+"\n"+"2) ID hang");
         System.out.println("Lua chon: ");
         int cachsua = scanner.nextInt();
 		
