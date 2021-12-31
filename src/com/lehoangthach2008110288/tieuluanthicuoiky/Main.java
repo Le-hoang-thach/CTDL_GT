@@ -15,23 +15,51 @@ public class Main {
 		
 		Date a = new Date();
 		
-		DienMay headDM = new DienMay(1, "1", 1, a);
-		SanhSu headSS = new SanhSu(2, "2", 2, a);
-		ThucPham headTP = new ThucPham(3, "3", 3, a);
+		DienMay headDM = new DienMay(1, "may lanh", 120000000, a);
+		SanhSu headSS = new SanhSu(2, "binh gom", 200000, a);
+		ThucPham headTP = new ThucPham(3, "rau muong", 5000, a);
 		
-		DienMay DM1 = new DienMay(4, "4", 4, a);
+		DienMay DM1 = new DienMay(4, "may quat", 150000, a);
 		headDM.next = DM1;
-		SanhSu SS1 = new SanhSu(5, "5", 5, a);
+		SanhSu SS1 = new SanhSu(5, "chen gom", 20000, a);
 		headSS.next = SS1;
-		ThucPham TP1 = new ThucPham(6, "6", 6, a);
+		ThucPham TP1 = new ThucPham(6, "ca rot", 15000, a);
 		headTP.next = TP1;
 		
-		DienMay DM2 = new DienMay(7, "7", 7, a);
+		DienMay DM2 = new DienMay(7, "tu lanh", 1000000, a);
 		DM1.next = DM2;
-		SanhSu SS2 = new SanhSu(8, "8", 9, a);
+		SanhSu SS2 = new SanhSu(8, "bat gom", 30000, a);
 		SS1.next = SS2;
-		ThucPham TP2 = new ThucPham(9, "9", 9, a);
+		ThucPham TP2 = new ThucPham(9, "rau lan", 12000, a);
 		TP1.next = TP2;
+
+		DienMay DM3 = new DienMay(10, "tivi", 11000000, a);
+		DM2.next = DM3;
+		SanhSu SS3 = new SanhSu(11, "dia su", 50000, a);
+		SS2.next = SS3;
+		ThucPham TP3 = new ThucPham(12, "dua hau", 50000, a);
+		TP2.next = TP3;
+
+		DienMay DM4 = new DienMay(13, "may tinh vivo book", 20000000, a);
+		DM3.next = DM4;
+		SanhSu SS4 = new SanhSu(14, "dia su", 50000, a);
+		SS3.next = SS4;
+		ThucPham TP4 = new ThucPham(15, "thit heo 1kg", 100000, a);
+		TP3.next = TP4;
+
+		DienMay DM5 = new DienMay(16, "am sieu toc", 300000, a);
+		DM4.next = DM5;
+		SanhSu SS5 = new SanhSu(17, "ly su", 100000, a);
+		SS4.next = SS5;
+		ThucPham TP5 = new ThucPham(18, "thit bo 1kg", 250000, a);
+		TP4.next = TP5;
+
+		DienMay DM6 = new DienMay(19, "iphone 13 pro max 512GB", 49000000, a);
+		DM5.next = DM6;
+		SanhSu SS6 = new SanhSu(20, "khay ta su", 30000, a);
+		SS5.next = SS6;
+		ThucPham TP6 = new ThucPham(21, "mam nem", 25000, a);
+		TP5.next = TP6;
 		
 		kho.headDienMay = headDM;
 		kho.headSanhSu = headSS;
@@ -65,7 +93,7 @@ public class Main {
             System.out.println("7)  Sap xep kho hang    	");
             System.out.println("8)  Exit            		");
             System.out.println("-----------------------------------------");
-            System.out.print("Chọn chức năng: ");
+            System.out.print("Choon chuc nang: ");
             int key = bienNhap.nextInt();
             
             switch(key){

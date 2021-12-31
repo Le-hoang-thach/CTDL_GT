@@ -39,7 +39,7 @@ public class DienMay {
 	
 	public void inTT() {
 		System.out.println("Ten hang: " + name);
-        System.out.println(" Loai hang: Đien may");
+        System.out.println(" Loai hang: Dien may");
         System.out.println(" Id: " + id);
         System.out.println(" Gia: " + gia);
         System.out.println(" Ngay nhap: "+ ngayNhapKho);
